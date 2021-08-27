@@ -1,0 +1,48 @@
+* {margin: 0;
+    padding: 0;}
+
+body {font-family: 'Julius Sans One', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    background-color: white;}
+
+/* INDEX GRID */
+@mixin grid($margin,$display,$gap){
+    margin:$margin;
+    display:$display;
+    grid-gap:$gap;}
+
+.index-contenedor {@include grid(0px auto, grid, 0px 0px);
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(6, auto);
+    
+    grid-template-areas:"header"
+                        "aside"
+                        "main"
+                        "h4"
+                        "article1"
+                        "footer"
+}   
+
+/* PRODUCTOS GRID */
+
+.productos-contenedor {@include grid(0px auto, grid, 0px 0px);
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas:"header"
+                        "carousel"
+                        "h4"
+                        "article1"
+                        "footer";}
+
+/*  CONTACTO GRID */
+
+.contacto-contenedor {@include grid(0px auto, grid, 0.5px 0px);
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:"header"
+                        "aside"
+                        "main"
+                        "footer";}

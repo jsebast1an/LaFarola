@@ -1,0 +1,54 @@
+/* MAIN */
+
+.index-contenedor .main {grid-area: main;}
+
+.index-contenedor .main__descripcion {padding: 20px 10%;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 18px;
+    text-align: center;}
+
+
+/* - - - - - - - ASIDE  -- - - -  */
+
+.index-contenedor .aside {grid-area:aside;}
+
+.aside__carousel {width: 600px}
+    
+/* ---- TITULO H4 -----*/
+.index-contenedor .h4__titulo {grid-area: h4;
+    font-weight: 900;
+    margin-bottom: 0px;
+    color: rgb(68, 58, 58);
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    padding: 20px 10%;
+    font-size:30px;
+    font-family: 'Roboto Slab', serif;
+    background: rgb(225,223,224);
+    background: linear-gradient(0deg, rgba(225,223,224,1) 77%, rgba(224,224,222,1) 100%);}
+/* -- - - - --  ARTICLE 1 - - - - - */
+.index-contenedor .article1 {grid-area: article1;
+    background-image: url(../imgs/offwhitefondo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;}
+
+
+.article1__imagentalla {margin: 50px 120px;}
+
+.article1__table {background-color: white;
+        margin: 20px 100px;
+        transition: all 0.25s;
+        width: 20%;}
+.article1__table:hover {transform: scale(1.1,1.1);}
+
+
+.A {color:darkblue}
+.B {color:rgb(212, 44, 39)}
+

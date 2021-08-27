@@ -1,0 +1,12 @@
+/* - - - - - --  HEADER  - - - - -  */
+.header {grid-area: header;
+        text-shadow: rgb(199, 195, 195) 10px 5px 2px;}
+    
+    .header__navbar {position: relative;}
+    
+    .header__navbarmenu {display: flexbox;
+                        justify-content: flex-end;
+                        padding-top: 50px;
+                        padding-bottom: 15px;}
+    
+    .header__navitem {padding: 0px 10px;}
