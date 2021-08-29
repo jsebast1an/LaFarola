@@ -1,85 +1,106 @@
-/* CARDS MIEMBROS */
-    /* card 1 */
+@mixin cardsSizes ($position, $width, $height, $hidden, $radioBorder){
+    position:$position;
+    width:$width;
+    height: $height;
+    backface-visibility: $hidden;
+    border-radius: $radioBorder;
+}
+
+@mixin fondosImg ($imageBg, $positionBg, $sizeBg){
+    background-image:$imageBg;
+    background-position: $positionBg;
+    background-size: $sizeBg;
+}
+
+/* CARDS ARTICLE 1*/
+
+/* card 1 */
 .article1__cardpadre {position: relative;
-        width: 250px;
-        height: 320px;
-        margin: 30px 100px;}
+                    width: 250px;
+                    height: 320px;
+                    margin: 30px 100px;}
 
 .article1__card {position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease;}
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: all 0.5s ease;}
 .article1__card:hover {transform: rotateY(180deg);}
 
-.article1__cardfront1 {position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background-image:url(../imgs/fondocard.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-.article1__cardtitle--front {color:rgb(244, 248, 18);
-                font-weight: 700;
-                background: rgba(0, 0, 0, 0.8);
-                padding: 5px;}
+.article1__cardfront1 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/fondocard.jpg), center, cover);
+
+display: flex;
+justify-content: center;
+align-items: center;}
+.article1__cardtitle--front {background: rgba(0, 0, 0, 0.8);
+                            padding: 5px;}
+
+                            
 /* ANIMACION CARDTITLE */
 @keyframes multicolor1 {
     0%{color:rgb(255, 179, 0);}
     25%{color:rgb(102, 255, 0)}
     50%{color: rgb(0, 225, 255);}
     75%{color:rgb(0, 119, 255)}
-    100%{color:rgb(238, 255, 0)}}
+    100%{color:rgb(238, 255, 0)}
+    }
 .article1__cardtitle--front {animation-name: multicolor1;
-animation-iteration-count: infinite;
-animation-duration: 2s;
-animation-delay: 0s;}
+                            animation-iteration-count: infinite;
+                            animation-duration: 2s;
+                            animation-delay: 0s;}
 
 
-.article1__cardback1 {position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background-image:url(../imgs/vipmember.jpg);
-        background-size: cover;
-        background-position: center;
-        transform: rotateY(180deg);
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-.article1__cardtitle--back {color:rgb(250, 253, 68);
-font-weight: 700;
-background: rgba(0, 0, 0, 0.8);
-padding: 5px;}
+.article1__cardback1 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/vipmember.jpg), center, cover);
 
+transform: rotateY(180deg);
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.article1__cardtitle--back {color:rgb(255, 255, 255)}
 /* card 2 */
 
-.article1__cardfront2 {position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-background-image:url(../imgs/fondocard2.jpg);
-background-position: center;
-background-size: cover;
-border-radius: 10px;
+.article1__cardfront2 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/fondocard2.jpg), center, cover);
+
 display: flex;
 justify-content: center;
 align-items: center;}
 
-.article1__cardback2 {position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-background-image:url(../imgs/goldmember.jpg);
-background-size: cover;
-background-position: center;
+.article1__cardback2 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/goldmember.jpg), center, cover);
+
 transform: rotateY(180deg);
-border-radius: 10px;
 display: flex;
 justify-content: center;
 align-items: center;}
+
+/* card 3 */
+
+.article1__cardfront3 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/hoddieAB.jpg), center, cover);}
+
+.article1__cardback3 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/tablaHoodie.jpg), center, cover);
+
+transform: rotateY(180deg);}
+
+
+/* card 4 */
+.article1__cardfront4 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/remeraAB.jpg), center, cover);}
+
+.article1__cardback4 {
+@include cardsSizes(absolute, 100%, 100%, hidden, 10px);
+@include fondosImg(url(/LaFarola/imgs/tablaRemera.jpg), center, cover);
+
+transform: rotateY(180deg);}

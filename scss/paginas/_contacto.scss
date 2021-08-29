@@ -5,9 +5,9 @@
 .contacto-contenedor .aside {grid-area: aside;
     margin: 10px 1px;}
 
-.contacto-contenedor .aside__titulo {background-image:url(../imgs/offwhitefondo3.jpg);
-            background-size: cover;
-            background-position:center;
+.contacto-contenedor .aside__titulo {
+            @include fondosImg(url(/LaFarola/imgs/offwhitefondo3.jpg), center, cover);
+
             text-align: center;
             padding: 25px;
             font-size: 120px;

@@ -131,31 +131,13 @@ h3 {
 /* -- - - - --  ARTICLE 1 - - - - - */
 .index-contenedor .article1 {
   grid-area: article1;
-  background-image: url(../imgs/offwhitefondo.jpg);
+  background-image: url(/LaFarola/imgs/offwhitefondo.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
-
-.article1__imagentalla {
-  margin: 50px 120px; }
-
-.article1__table {
-  background-color: white;
-  margin: 20px 100px;
-  transition: all 0.25s;
-  width: 20%; }
-
-.article1__table:hover {
-  transform: scale(1.1, 1.1); }
-
-.A {
-  color: darkblue; }
-
-.B {
-  color: #d42c27; }
 
 /* ----- MAIN - - - -- */
 .productos-contenedor .main {
@@ -178,7 +160,7 @@ h3 {
 /*----- ARTICLE------ */
 .productos-contenedor .article1 {
   grid-area: article1;
-  background-image: url(../imgs/offwhitefondo2.jpg);
+  background-image: url(/LaFarola/imgs/offwhitefondo2.jpg);
   background-position: center;
   background-size: cover;
   font-family: 'Roboto Slab', serif; }
@@ -201,9 +183,9 @@ h3 {
   margin: 10px 1px; }
 
 .contacto-contenedor .aside__titulo {
-  background-image: url(../imgs/offwhitefondo3.jpg);
-  background-size: cover;
+  background-image: url(/LaFarola/imgs/offwhitefondo3.jpg);
   background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 25px;
   font-size: 120px;
@@ -226,7 +208,7 @@ h3 {
   margin-bottom: 10px;
   box-shadow: 1px 9px 15px 0px #878a87; }
 
-/* CARDS MIEMBROS */
+/* CARDS ARTICLE 1*/
 /* card 1 */
 .article1__cardpadre {
   position: relative;
@@ -249,17 +231,15 @@ h3 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-image: url(../imgs/fondocard.jpg);
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/fondocard.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .article1__cardtitle--front {
-  color: #f4f812;
-  font-weight: 700;
   background: rgba(0, 0, 0, 0.8);
   padding: 5px; }
 
@@ -287,20 +267,17 @@ h3 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-image: url(../imgs/vipmember.jpg);
-  background-size: cover;
-  background-position: center;
-  transform: rotateY(180deg);
   border-radius: 10px;
+  background-image: url(/LaFarola/imgs/vipmember.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .article1__cardtitle--back {
-  color: #fafd44;
-  font-weight: 700;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 5px; }
+  color: white; }
 
 /* card 2 */
 .article1__cardfront2 {
@@ -308,10 +285,10 @@ h3 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-image: url(../imgs/fondocard2.jpg);
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/fondocard2.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -321,11 +298,139 @@ h3 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-image: url(../imgs/goldmember.jpg);
-  background-size: cover;
-  background-position: center;
-  transform: rotateY(180deg);
   border-radius: 10px;
+  background-image: url(/LaFarola/imgs/goldmember.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center; }
+
+/* card 3 */
+.article1__cardfront3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/hoddieAB.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.article1__cardback3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/tablaHoodie.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg); }
+
+/* card 4 */
+.article1__cardfront4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/remeraAB.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.article1__cardback4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-image: url(/LaFarola/imgs/tablaRemera.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg); }
+
+/* ---- MEDIA QUERIES- - - - */
+/* INDEX */
+@media screen and (max-width: 640px) {
+  .index-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "aside" "main" "h4" "article1" "footer"; }
+  .index-contenedor .h4__titulo {
+    font-size: 19px; }
+  .index-contenedor .main__descripcion {
+    font-size: 19px; }
+  .footer__box {
+    padding: 15px; } }
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .index-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "aside" "main" "h4" "article1" "footer"; }
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap; } }
+
+/* PRODUCTOS */
+@media screen and (max-width: 640px) {
+  .productos-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "carousel" "h4" "article1" "footer"; }
+  .productos-contenedor .h4__titulo {
+    font-size: 20px;
+    padding: 10px; }
+  .footer__box {
+    padding: 15px; } }
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .productos-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "carousel" "h4" "article1" "footer"; }
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap; } }
+
+/* CONTACTO */
+@media screen and (max-width: 640px) {
+  .contacto-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0.5px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "aside" "main" "footer"; }
+  .main__formulario {
+    padding: 10px 15px; }
+  .footer__box {
+    padding: 15px; } }
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .contacto-contenedor {
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0.5px 0px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header" "aside" "main" "footer"; }
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap; }
+  .footer__box {
+    padding: 15px; } }

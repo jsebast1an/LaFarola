@@ -20,17 +20,16 @@
 /*----- ARTICLE------ */
 
 .productos-contenedor .article1 {grid-area: article1;
-            background-image: url(../imgs/offwhitefondo2.jpg);
-            background-position: center;
-            background-size: cover;
-            font-family: 'Roboto Slab', serif;}
+@include fondosImg(url(/LaFarola/imgs/offwhitefondo2.jpg), center, cover);
 
-.productos-contenedor .article__container {display: flex;
+font-family: 'Roboto Slab', serif;}
+
+.productos-contenedor .article__container {
+                    display: flex;
                     flex-wrap: wrap;    
                     justify-content: center;}
 
-.article__box {margin: 30px;
-                transition: 0.25s;
-                }
+.article__box { margin: 30px;
+                transition: 0.25s;}
 
 .article__box:hover {transform: scale(1.05,1.05);}
