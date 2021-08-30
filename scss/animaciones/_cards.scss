@@ -97,7 +97,7 @@ transform: rotateY(180deg);}
 /* card 4 */
 .article1__cardfront4 {
 @include cardsSizes(absolute, 100%, 100%, hidden, 10px);
-@include fondosImg(url(/LaFarola/imgs/remeraAB.jpg), center, cover);}
+@include fondosImg(url(/LaFarola/imgs/remeraAB.jpeg), center, cover);}
 
 .article1__cardback4 {
 @include cardsSizes(absolute, 100%, 100%, hidden, 10px);

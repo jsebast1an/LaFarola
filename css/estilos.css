@@ -171,7 +171,7 @@ h3 {
   justify-content: center; }
 
 .article__box {
-  margin: 30px;
+  margin: 30px 90px;
   transition: 0.25s; }
 
 .article__box:hover {
