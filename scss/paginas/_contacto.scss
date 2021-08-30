@@ -1,4 +1,8 @@
-
+@mixin fondosImg ($imageBg, $positionBg, $sizeBg){
+    background-image:$imageBg;
+    background-position: $positionBg;
+    background-size: $sizeBg;
+}
 
 /* ----- ASIDE ---- */
 
