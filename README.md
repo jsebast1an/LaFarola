@@ -1,15 +1,14 @@
-# LaFarola
-Prototipo de sitio web para: La Farola, tienda de ropa - Streetwear Unisex 
-Construida en el curso de Desarrollo Web por CoderHouse.
+# La Farola
+Prototipo de sitio web para: La Farola, tienda de ropa - Streetwear Unisex
 
-LIBRERÍA:
-BOOTSTRAP
+Construida para el curso de Desarrollo Web por CoderHouse.
 
-PAGINAS: 5
+## LIBRERÍA:
+- BOOTSTRAP
 
-INICIO: FUNCIONAL
+- PAGINAS: 5
+- INICIO: FUNCIONAL
+- CARRITO: NO FUNCIONAL
+- FORMULARIO: NO FUNCIONAL
 
-CARRITO: NO FUNCIONAL
-
-FORMULARIO: NO FUNCIONAL
-
+NO ACTUALIZADA DESPUES DE SER PRESENTADA.
