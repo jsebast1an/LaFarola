@@ -3,9 +3,9 @@ Prototipo de sitio web para: La Farola, tienda de ropa - Streetwear Unisex
 
 Construida para el curso de Desarrollo Web por CoderHouse.
 
-## LIBRERÍA:
+### CARACTERISCTICAS:
 - BOOTSTRAP
-
+- SASS
 - PAGINAS: 5
 - INICIO: FUNCIONAL
 - CARRITO: NO FUNCIONAL
